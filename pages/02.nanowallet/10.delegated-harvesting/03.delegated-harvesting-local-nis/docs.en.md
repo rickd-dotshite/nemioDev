@@ -10,7 +10,7 @@ Above we showed how to harvest on a remote node, and it is a normal case for man
 
 **NIS needs Java 8 64 bit to run. Download it from [java.com](https://www.java.com/en/download/manual.jsp) and install it with default values.**
 
-To run a local node, download and extract the standalone client from [nem.io](https://www.nem.io/install.html) or [the developer's repository](http://bob.nem.ninja/). 
+To run a local node, download and extract the standalone client from [nem.io](https://www.nem.io/install.html) or [the developer's repository](http://bob.nem.ninja/) file nis-x.x.xx.tgz (where x.x.xx is the highest number). 
 
 In the extracted folder (nis-ncc) you will find a file called "runNis" (Windows: runNis.bat, OSX/Linux: nix.runNis.sh).
 ![](bWxx446.png)
@@ -27,13 +27,15 @@ Navigate to the created folder structure.
 ![](AxmeKzJ.png)
 
 Delete both files (NIS needs to be stopped to delete the files).
-Navigate to [bob.nem.ninja](http://bob.nem.ninja) and download the DB file. We do this to speed up the initial sync of NIS.
+Navigate to [bob.nem.ninja](http://bob.nem.ninja) and download the latest DB file (nis5_mainnet.xx-xxxxx.db.zip). We do this to speed up the initial sync of NIS.
 
 ![](OgDXINY.png)
 
 After the download completes, extract the file "nis5_mainnet.h2.db" and place it in the folder from above.
 
 ![](07BRFsT.png)
+
+Ensure that you have changed the delegated private key as per https://blog.nem.io/nis-auto-start-and-auto-harvest/
 
 Once you have done this, start NIS again with "runNis" and let it run in the background. NIS will now finish syncing. 
 
